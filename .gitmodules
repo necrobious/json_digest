@@ -1,4 +1,4 @@
 [submodule "sf-city-lots-json"]
 	path = benches/sf-city-lots-json
-	url = https://github.com:zemirco/sf-city-lots-json
+	url = https://github.com/zemirco/sf-city-lots-json
 	branch = master
