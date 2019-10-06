@@ -3,7 +3,7 @@ name = "json_digest"
 version = "0.1.0"
 authors = ["Kirk Peterson <necrobious@gmail.com>"]
 edition = "2018"
-description = "produces a digest of a JSON value, respecting JSON sematics"
+description = "Produces a digest of a JSON value, while respecting JSON sematics."
 
 [dependencies]
 serde = "1.0"

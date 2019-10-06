@@ -121,7 +121,7 @@ mod tests {
 
 
     #[test]
-    fn arrays_with_same_elements_should_have_different_digests() {
+    fn arrays_with_same_elements_in_diffent_orders_should_have_different_digests() {
         let v3 = serde_json::from_str::<Value>(TEST_VECTOR_3).unwrap();
         let mut buf3 = [0u8;32];
         super::json_digest(&mut buf3, &v3);
@@ -139,7 +139,7 @@ mod tests {
 
 
     #[test]
-    fn the_same_digest_is_produced_regardless_of_object_order() {
+    fn objects_with_the_same_properties_in_different_orders_should_have_the_same_digest() {
         let v1 = serde_json::from_str::<Value>(TEST_VECTOR_1).unwrap();
         let mut buf1 = [0u8;32];
         super::json_digest(&mut buf1, &v1);
